@@ -50,8 +50,8 @@ export default function Navbar() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Categories</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Website Builders</Dropdown.Item>
+        <Dropdown.Item href="#/action-1" className="text-success">Categories</Dropdown.Item>
+        <Dropdown.Item href="#/action-2" className="text-success">Website Builders</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
       </div>

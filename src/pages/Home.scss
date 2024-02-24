@@ -12,7 +12,9 @@
     display: flex;
     flex-direction:column;
 }
-
+p{
+    margin-top: 12px!important;
+}
 #dropdown-basic{
     background-color:inherit !important;
     padding:5px;

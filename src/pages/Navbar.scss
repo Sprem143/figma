@@ -19,7 +19,8 @@
    height: 80px;
    background-color: navy;
    width:100vw !important;
-   gap: 2vw;
+   gap: 4vw;
+   padding:0 10%
 }
 .searchBox{
     @include dfjc;
@@ -27,7 +28,7 @@
 .search{
     @include bgwh;
     @include dfjc;
-    width: 7vw;
+    width: 5vw;
     border-left: none;
     background-color: rgb(227, 225, 225);
     border-top-right-radius: 5px;
@@ -57,8 +58,9 @@ button:hover{
     background-color:inherit !important;
     padding:5px;
     visibility: hidden;
+    color: white!important;
     a{
-        color:white;
+        color: white !important;;
        
     }
 }
@@ -79,7 +81,9 @@ button:hover{
     .searchBox{
         width:30vw;
         .box{
-            width:30vw
+            width:30vw;
         }
+       
     }
+    
 }
