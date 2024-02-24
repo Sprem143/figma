@@ -58,11 +58,14 @@ button:hover{
     background-color:inherit !important;
     padding:5px;
     visibility: hidden;
-    color: white!important;
+    // color: white!important;
     a{
-        color: white !important;;
+        color: rgb(58, 246, 16) !important;
        
     }
+}
+#dropdown-basic{
+   background-color: white !important;
 }
 .headr{
     padding:0 5% ;
