@@ -1,0 +1,125 @@
+.home-page{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 0 5% 0 5%;
+}
+@mixin dfdr{
+    display: flex;
+    flex-direction: row;
+}
+@mixin dfdc{
+    display: flex;
+    flex-direction:column;
+}
+
+#dropdown-basic{
+    background-color:inherit !important;
+    padding:5px;
+    color: black;
+    border: none;
+}
+.img-container{
+    @include dfdr;
+}
+.crd{
+    @include dfdr;
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 0px 5px 3px rgb(228, 228, 228);
+    margin-bottom: 25px;
+    .section1{
+        flex-basis: 20%;
+    }
+    .section2{
+        flex-basis: 60%;
+    }
+    
+    .lbl{
+        height:25px;
+        width: 10vw;
+        background-color:rgb(255, 140, 0);
+        border-radius: 5px;
+         justify-content:center;
+         color: white;
+        gap: 1vw;    }
+    .section3{
+        flex-basis: 20%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bgblue{
+        background-color: rgba(144, 223, 223, 0.798);
+    }
+}
+.signup{
+    background-color: rgb(65, 65, 209) !important;
+    width: 12vw;
+    color: white;
+}
+.offer{
+    background-color: rgba(140, 140, 229, 0.353);
+    width: auto;
+    font-size: small;
+    color: blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+.discount{
+    font-size: small;
+    color: rgb(136, 136, 136);
+}
+.deal{
+    width: 100%;
+    margin-top: 10px;
+    background-color:inherit !important;
+    color: white;
+    border-radius: 7px;
+}
+.bgylow{
+    background-color: rgb(242, 242, 180);
+    padding: 2px;
+    .offer{
+        background-color: rgb(246, 246, 246);
+    }
+}
+.mdl{
+    @include dfdr;
+    justify-content: space-evenly;
+}
+@media screen and (max-width:960px) {
+    .lbl{
+        width: 17vw! important;
+    }
+    .sign-up{
+        width: 20vw !important;
+    }
+}
+@media screen and (max-width:576px) {
+    .home-page{
+        padding: 2%;
+    }
+    .crd{
+        flex-direction: column;
+    }
+    .lbl{
+        width: 27vw !important;
+    }
+    .mdl{
+        @include dfdc;
+        align-items: center;
+        gap: 2vh;
+    }
+    .signup{
+        width: 24vw !important;
+    }
+    .sb2{
+        width: 80vw;
+    }
+    .su{
+        flex-direction: column;
+    }
+}  

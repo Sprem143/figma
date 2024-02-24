@@ -1,0 +1,85 @@
+@mixin dfjc{
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
+  @mixin bgwh{
+    border: 1px solid rgb(176, 176, 176);
+    height: 30px;
+  }
+  .dfdc{
+   display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+  }
+  
+.nave{
+    @include dfjc;
+   height: 80px;
+   background-color: navy;
+   width:100vw !important;
+   gap: 2vw;
+}
+.searchBox{
+    @include dfjc;
+}
+.search{
+    @include bgwh;
+    @include dfjc;
+    width: 7vw;
+    border-left: none;
+    background-color: rgb(227, 225, 225);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.box{
+    @include bgwh;
+     width: 25vw;
+     border-right:none !important;
+     border-top-left-radius: 5px;
+     border-bottom-left-radius: 5px;
+    padding-left: 5px;
+}
+input:focus{
+border: 0;
+box-shadow: none !important;
+}
+button{
+    background-color: rgb(216, 216, 216) !important;
+    padding: 0!important;
+    border: none;
+}
+button:hover{
+    border: none;
+}
+#nav-dropdown{
+    background-color:inherit !important;
+    padding:5px;
+    visibility: hidden;
+    a{
+        color:white;
+       
+    }
+}
+.headr{
+    padding:0 5% ;
+}
+@media screen and (max-width:576px) {
+    .hideformobile{
+        visibility: hidden !important;
+        width: 0;
+    } 
+    #nav-dropdown{
+        visibility: visible;
+    }
+    .deal{
+        flex-basis: 25vw;
+    }
+    .searchBox{
+        width:30vw;
+        .box{
+            width:30vw
+        }
+    }
+}
