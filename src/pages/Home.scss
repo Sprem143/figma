@@ -63,12 +63,15 @@ p{
 }
 .offer{
     background-color: rgba(140, 140, 229, 0.353);
-    width: auto;
+    width: 60px;
     font-size: small;
     color: blue;
     border-radius: 5px;
     display: flex;
     justify-content: center;
+}
+.rate{
+    width: 30px;
 }
 .discount{
     font-size: small;
@@ -81,6 +84,10 @@ p{
     color: white;
     border-radius: 7px;
 }
+.dc{
+    width: auto;
+    margin-bottom: 10px !important;
+}
 .bgylow{
     background-color: rgb(242, 242, 180);
     padding: 2px;
@@ -91,6 +98,12 @@ p{
 .mdl{
     @include dfdr;
     justify-content: space-evenly;
+}
+.btn{
+    background-color: blue !important;
+    padding:5px !important;
+    width: 100%;
+    margin-top: 9px;
 }
 @media screen and (max-width:960px) {
     .lbl{
@@ -106,6 +119,10 @@ p{
     }
     .crd{
         flex-direction: column;
+        
+    }
+    .img-container{
+        justify-self: center;
     }
     .lbl{
         width: 27vw !important;

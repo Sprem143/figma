@@ -46,7 +46,6 @@ export default function Navbar() {
         {/* mobile view option */}
         <Dropdown id="nav-dropdown">
       <Dropdown.Toggle className="p-2" variant="success" id="dropdown-basic" >
-      
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
